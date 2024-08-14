@@ -47,17 +47,17 @@ class _MyHomePageState extends State<MyHomePage> {
   void showTheLink() {
     String result = "";
     try {
-      final decrypter = crypt.Encrypter(
-          crypt.AES(widget.appKey, mode: crypt.AESMode.cbc, padding: 'PKCS7'));
-      final decrypted = decrypter.decryptBytes(
-          crypt.Encrypted.from64(widget.secretText),
-          iv: widget.iv);
-      Future.delayed(Duration(seconds: 2),() {
-        launchUrl(Uri.parse(utf8.decode(decrypted)));
-      });
-      result = "goodluck";
+      // final decrypter = crypt.Encrypter(
+      //     crypt.AES(widget.appKey, mode: crypt.AESMode.cbc, padding: 'PKCS7'));
+      // final decrypted = decrypter.decryptBytes(
+      //     crypt.Encrypted.from64(widget.secretText),
+      //     iv: widget.iv);
+      // Future.delayed(Duration(seconds: 2),() {
+      //   launchUrl(Uri.parse(utf8.decode(decrypted)));
+      // });
+      // result = "goodluck";
 
-      // result = "why is it commented?";
+      result = "why is it commented?";
     } on Exception catch (e) {
       result = "still fail, please fix the code";
     }
