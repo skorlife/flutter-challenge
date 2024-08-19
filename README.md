@@ -1,6 +1,6 @@
 [//]: # (# this_is_your_assesment)
 
-Welcome!.
+Welcome! 
 
 [//]: # (## Getting Started)
 
